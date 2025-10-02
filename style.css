@@ -1,0 +1,236 @@
+@font-face {
+  font-family: 'Sakana';
+  src: url('fonts/Sakana.ttf') format('truetype');
+}
+
+* { margin: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1em;
+  background-color: #000000;
+}
+
+a { color: #d1d1d1; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+em { color: #7f9cff; font-style: normal; }
+
+.slogan {
+  font-size: 2em;
+  color: #7f9cff;
+  font-family: 'Sakana', sans-serif;
+  text-align: center;
+  
+}
+
+p { font-size: 1.1em; color: #e5e5f0; }
+
+section { padding: 80px; }
+
+.site-header {
+  background-color: #1d1b1b; 
+  padding: 20px 50px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo img {
+  display: block;
+  height: 70px;
+  width: auto;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-weight: 700; 
+}
+
+.cta {
+  display: inline-block;
+  background: linear-gradient(#444466, #6b6b8f);
+  color: #fff;
+  border-radius: 50px;
+  padding: 20px 30px;
+}
+.cta:hover {
+  background: linear-gradient(#303040, #50506f);
+  text-decoration: none;
+}
+
+.RB-INTRO {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+.logo-main {
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.galerie {
+  background: #000000;
+  padding: 40px 0;
+}
+
+.galerie h2 {
+  font-family: 'Sakana', sans-serif;
+  color: #7f9cff;
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 3em;
+  padding: 0 20px;
+  letter-spacing: 1px;
+}
+
+.galerie__item {
+  padding: 80px 0;
+  width: 100%;
+}
+
+.galerie__item:nth-child(odd) {
+  background: #000000;
+}
+
+.galerie__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.galerie__text {
+  text-align: center;
+  max-width: 800px;
+}
+
+.galerie__text h3 {
+  font-family: 'Sakana', sans-serif;
+  color: #7f9cff;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.galerie__text p {
+  color: #e5e5f0;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.galerie__item img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.galerie__item img:hover {
+  transform: scale(1.02);
+  
+}
+
+@media (max-width: 960px) {
+  .galerie__content {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .galerie__item img {
+    width: 100%;
+  }
+  
+  .galerie__item {
+    padding: 40px 0;
+  }
+}
+
+.comp {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.comp img {
+  width: 30%; /* réduit de 50% à 30% */
+  max-width: 150px; /* réduit de 300px à 150px */
+  height: 150px; /* réduit de 340px à 150px */
+  object-fit: contain; /* changed from cover to contain pour préserver les proportions */
+  border-radius: 10px; 
+}
+
+
+.contact-form {
+  background: #232347;
+  padding: 32px 24px;
+  border-radius: 16px;
+  max-width: 350px;
+  margin: 40px auto;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #2e2e3f;
+  color: #e5e5f0;
+  font-size: 1em;
+  margin-bottom: 8px;
+  resize: vertical;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #7f9cff;
+}
+
+.contact-form button {
+  background: linear-gradient(90deg, #7f9cff, #50506f);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 0;
+  font-size: 1.1em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(90deg, #50506f, #7f9cff);
+}
+
+@media (max-width: 960px) {
+  .RB-INTRO { width: 90%; flex-direction: column; }
+  .logo2 { max-width: 100%; }
+  .galerie__row { flex-wrap: wrap; }
+  .comp { flex-wrap: wrap; }
+}
