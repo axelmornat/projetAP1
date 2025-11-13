@@ -1,15 +1,58 @@
-/* ========================================
-   FONTS & BASE STYLES
-   ======================================== */
+/* Section Nos gros clients */
+.big-clients {
+  background: #000000;
+  padding: 60px 0 40px 0;
+  text-align: center;
+  border-top: 2px solid #7f9cff;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-out;
+}
+.big-clients h2 {
+  color: #7f9cff;
+  font-family: 'Sakana', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.client {
+  background: #232347;
+  border-radius: 16px;
+  padding: 24px 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 160px;
+  transition: transform 0.3s;
+}
+.client:hover {
+  transform: translateY(-8px) scale(1.05);
+}
+.client img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+.client span {
+  color: #e5e5f0;
+  font-size: 1.1em;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+}
 @font-face {
   font-family: 'Sakana';
   src: url('fonts/Sakana.ttf') format('truetype');
 }
 
-* { 
-  margin: 0; 
-  box-sizing: border-box; 
-}
+* { margin: 0; box-sizing: border-box; }
 
 body {
   font-family: 'Manrope', sans-serif;
@@ -17,92 +60,10 @@ body {
   background-color: #000000;
 }
 
-a { 
-  color: #d1d1d1; 
-  text-decoration: none; 
-}
+a { color: #d1d1d1; text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-a:hover { 
-  text-decoration: underline; 
-}
-
-p { 
-  font-size: 1.1em; 
-  color: #e5e5f0; 
-}
-
-section { 
-  padding: 80px; 
-}
-
-/* ========================================
-   HEADER & NAVIGATION
-   ======================================== */
-.site-header {
-  background-color: #000000; 
-  padding: 20px 50px;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav__logo {
-  position: relative;
-  display: inline-block;
-}
-
-.nav__logo::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  background: radial-gradient(circle, rgba(127, 156, 255, 0.3) 0%, rgba(127, 156, 255, 0) 70%);
-  border-radius: 50%;
-  transition: all 0.5s ease;
-  z-index: 0;
-}
-
-.nav__logo:hover::before {
-  width: 100px;
-  height: 100px;
-}
-
-.nav__logo img {
-  display: block;
-  height: 70px;
-  width: auto;
-  position: relative;
-  z-index: 1;
-  transition: transform 0.3s ease;
-}
-
-.nav__logo:hover img {
-  transform: scale(1.1);
-}
-
-.nav__links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  font-weight: 700; 
-}
-
-/* ========================================
-   HOME PAGE - INTRO & SLOGAN
-   ======================================== */
-.RB-INTRO {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: auto;
-}
+em { color: #7f9cff; font-style: normal; }
 
 .slogan {
   font-size: 2em;
@@ -114,7 +75,6 @@ section {
   overflow: hidden;
 }
 
-/* Ghost Animation */
 .ghost {
   width: 3vmin;
   height: 4vmin;
@@ -181,9 +141,6 @@ section {
   border-radius: 100% / 0% 0% 70% 70%;
 }
 
-/* ========================================
-   FEATURE BLOCKS (Home Page)
-   ======================================== */
 .feature-blocks {
   display: flex;
   justify-content: center;
@@ -254,9 +211,92 @@ section {
   color: #e5e5f0;
 }
 
-/* ========================================
-   GALERIE (Services Page)
-   ======================================== */
+p { font-size: 1.1em; color: #e5e5f0; }
+
+section { padding: 80px; }
+
+.site-header {
+  background-color: #1d1b1b; 
+  padding: 20px 50px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  position: relative;
+  display: inline-block;
+}
+
+.nav__logo::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, rgba(127, 156, 255, 0.3) 0%, rgba(127, 156, 255, 0) 70%);
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+.nav__logo:hover::before {
+  width: 100px;
+  height: 100px;
+}
+
+.nav__logo img {
+  display: block;
+  height: 70px;
+  width: auto;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.nav__logo:hover img {
+  transform: scale(1.1);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-weight: 700; 
+}
+
+.cta {
+  display: inline-block;
+  background: linear-gradient(#444466, #6b6b8f);
+  color: #fff;
+  border-radius: 50px;
+  padding: 20px 30px;
+}
+.cta:hover {
+  background: linear-gradient(#303040, #50506f);
+  text-decoration: none;
+}
+
+.RB-INTRO {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+.logo-main {
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .galerie {
   background: #000000;
   padding: 40px 0;
@@ -322,11 +362,41 @@ section {
 
 .galerie__item img:hover {
   transform: scale(1.02);
+  
 }
 
-/* ========================================
-   CONTACT FORM
-   ======================================== */
+@media (max-width: 960px) {
+  .galerie__content {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .galerie__item img {
+    width: 100%;
+  }
+  
+  .galerie__item {
+    padding: 40px 0;
+  }
+}
+
+.comp {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.comp img {
+  width: 30%; /* réduit de 50% à 30% */
+  max-width: 150px; /* réduit de 300px à 150px */
+  height: 150px; /* réduit de 340px à 150px */
+  object-fit: contain; /* changed from cover to contain pour préserver les proportions */
+  border-radius: 10px; 
+}
+
+
 .contact-form {
   background: #232347;
   padding: 32px 24px;
@@ -376,9 +446,7 @@ section {
   background: linear-gradient(90deg, #50506f, #7f9cff);
 }
 
-/* ========================================
-   PRICING SECTION (Tarifs Page)
-   ======================================== */
+/* Section Pricing */
 .pricing-section {
   background: #000000;
   padding: 80px 50px;
@@ -539,9 +607,46 @@ section {
   box-shadow: 0 5px 25px rgba(127, 156, 255, 0.5);
 }
 
-/* ========================================
-   WHY CHOOSE SECTION (Tarifs Page)
-   ======================================== */
+@media (max-width: 960px) {
+  .RB-INTRO { width: 90%; flex-direction: column; }
+  .logo2 { max-width: 100%; }
+  .galerie__row { flex-wrap: wrap; }
+  .comp { flex-wrap: wrap; }
+  
+  .feature-blocks {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .feature-block {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .pricing-section {
+    padding: 60px 20px;
+  }
+
+  .pricing-title {
+    font-size: 2.2em;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .pricing-card-featured {
+    transform: scale(1);
+  }
+
+  .pricing-card-featured:hover {
+    transform: translateY(-10px) scale(1);
+  }
+}
+
+/* Section Why Choose */
 .why-choose {
   background: #000000;
   padding: 100px 50px;
@@ -602,6 +707,13 @@ section {
   50% {
     opacity: 0.7;
   }
+}
+
+.mockup-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
 }
 
 .ai-brain {
@@ -683,8 +795,6 @@ section {
   position: relative;
   z-index: 4;
   margin-top: 140px;
-  text-align: center;
-  color: #fff;
 }
 
 .mockup-text h4 {
@@ -697,10 +807,11 @@ section {
 }
 
 .mockup-text p {
-  font-size: 0.9em;
+  font-size: 1em;
   opacity: 0.95;
   letter-spacing: 1px;
   text-transform: uppercase;
+  font-size: 0.9em;
 }
 
 .mockup-controls {
@@ -834,56 +945,7 @@ section {
   box-shadow: 0 8px 30px rgba(255, 0, 110, 0.4);
 }
 
-/* ========================================
-   RESPONSIVE DESIGN
-   ======================================== */
 @media (max-width: 960px) {
-  .feature-blocks {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-  }
-
-  .feature-block {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .galerie__content {
-    flex-direction: column !important;
-    text-align: center;
-    gap: 30px;
-  }
-  
-  .galerie__item img {
-    width: 100%;
-  }
-  
-  .galerie__item {
-    padding: 40px 0;
-  }
-
-  .pricing-section {
-    padding: 60px 20px;
-  }
-
-  .pricing-title {
-    font-size: 2.2em;
-  }
-
-  .pricing-cards {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .pricing-card-featured {
-    transform: scale(1);
-  }
-
-  .pricing-card-featured:hover {
-    transform: translateY(-10px) scale(1);
-  }
-
   .why-choose {
     padding: 60px 20px;
   }
@@ -911,3 +973,4 @@ section {
     width: 100%;
   }
 }
+
