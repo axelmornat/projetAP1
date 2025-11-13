@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TCTG - SHOP</title>
+    <title>TCTG - Nos Services IA</title>
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <header class="site-header">
       <nav class="nav">
-        <a href="index.html" class="nav__logo" aria-label="Retour à l’accueil">
+        <a href="index.html" class="nav__logo" aria-label="Retour à l'accueil">
           <img src="images/logomini.png" alt="logo_tctg" />
         </a>
         <ul class="nav__links">
@@ -20,37 +20,240 @@
         </ul>
       </nav>
     </header>
-      <section class="galerie">
+
+    <!-- Hero Section avec animation -->
+    <section class="services-hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="title-line">Intelligence Artificielle</span>
+            <span class="title-line highlight">pour votre Business</span>
+          </h1>
+          <p class="hero-subtitle">Transformez vos données en décisions stratégiques grâce à nos solutions IA avancées</p>
+          
+          <!-- Animated tech icons -->
+          <div class="tech-orbit">
+            <div class="orbit-center">
+              <div class="ai-core"></div>
+            </div>
+            <div class="orbit-ring">
+              <div class="tech-icon icon-1">🧠</div>
+              <div class="tech-icon icon-2">📊</div>
+              <div class="tech-icon icon-3">⚡</div>
+              <div class="tech-icon icon-4">🔮</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services interactifs -->
+    <section class="interactive-services">
+      <div class="services-container">
+        <h2 class="section-title">Nos Solutions IA</h2>
         
-        <div class="galerie__item">
-          <div class="galerie__content">
-            <img src="images/projet1.png" alt="Prédiction financière" />
-            <div class="galerie__text">
-              <h3>Prédiction 2026</h3>
-              <p>Analyse prédictive de votre chiffre d'affaires et vos dépenses pour 2026 basée sur l'IA</p>
+        <div class="services-grid">
+          <!-- Service 1: Prédiction IA -->
+          <div class="service-card card-1" data-service="prediction">
+            <div class="card-background">
+              <div class="animated-bg bg-1"></div>
+            </div>
+            <div class="card-content">
+              <div class="service-icon prediction-icon">
+                <div class="crystal-ball">
+                  <div class="ball-inner"></div>
+                  <div class="magic-particles">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+              <h3>Prédiction Financière IA</h3>
+              <p>Algorithmes de machine learning qui analysent vos données historiques pour prédire avec précision vos revenus et dépenses futurs</p>
+              <div class="service-features">
+                <div class="feature">✨ Précision 95%+</div>
+                <div class="feature">📈 Tendances futures</div>
+                <div class="feature">🎯 Recommandations</div>
+              </div>
+              <button class="service-btn">Explorer l'IA</button>
             </div>
           </div>
-        </div> 
 
-        <div class="galerie__item">
-          <div class="galerie__content">
-            <img src="images/projet2.png" alt="Analyse des données" />
-            <div class="galerie__text">
-              <h3>Analyse des données</h3>
-              <p>Analyse approfondie des données de votre entreprise pour optimiser vos performances</p>
+          <!-- Service 2: Analyse de données -->
+          <div class="service-card card-2" data-service="analytics">
+            <div class="card-background">
+              <div class="animated-bg bg-2"></div>
+            </div>
+            <div class="card-content">
+              <div class="service-icon analytics-icon">
+                <div class="data-flow">
+                  <div class="flow-lines">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                  </div>
+                  <div class="data-nodes">
+                    <div class="node node-1"></div>
+                    <div class="node node-2"></div>
+                    <div class="node node-3"></div>
+                  </div>
+                </div>
+              </div>
+              <h3>Analyse Intelligente</h3>
+              <p>Deep learning et big data analytics pour découvrir des insights cachés dans vos données business et optimiser vos performances</p>
+              <div class="service-features">
+                <div class="feature">🔍 Insights cachés</div>
+                <div class="feature">⚡ Temps réel</div>
+                <div class="feature">📊 Dashboards IA</div>
+              </div>
+              <button class="service-btn">Analyser maintenant</button>
+            </div>
+          </div>
+
+          <!-- Service 3: Automatisation -->
+          <div class="service-card card-3" data-service="automation">
+            <div class="card-background">
+              <div class="animated-bg bg-3"></div>
+            </div>
+            <div class="card-content">
+              <div class="service-icon automation-icon">
+                <div class="robot-brain">
+                  <div class="brain-waves">
+                    <div class="wave wave-1"></div>
+                    <div class="wave wave-2"></div>
+                    <div class="wave wave-3"></div>
+                  </div>
+                  <div class="neural-network">
+                    <div class="neuron"></div>
+                    <div class="neuron"></div>
+                    <div class="neuron"></div>
+                  </div>
+                </div>
+              </div>
+              <h3>Automatisation IA</h3>
+              <p>Robots logiciels intelligents qui automatisent vos processus métier, de la génération de documents à la prise de décision</p>
+              <div class="service-features">
+                <div class="feature">🤖 IA autonome</div>
+                <div class="feature">⚙️ Zéro erreur</div>
+                <div class="feature">🚀 24/7 actif</div>
+              </div>
+              <button class="service-btn">Automatiser tout</button>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="galerie__item">
-          <div class="galerie__content">
-            <img src="images/projet3.png" alt="Automatisation documents" />
-            <div class="galerie__text">
-              <h3>Automatisation</h3>
-              <p>Génération automatique de vos factures et devis avec une précision maximale</p>
+    <!-- Section technologie avancée -->
+    <section class="tech-showcase">
+      <div class="tech-container">
+        <div class="tech-visual">
+          <div class="hologram">
+            <div class="holo-grid"></div>
+            <div class="holo-data">
+              <div class="data-stream">
+                <div class="binary">01001001 01000001</div>
+                <div class="binary">11000001 10110101</div>
+                <div class="binary">01010101 01001010</div>
+              </div>
+            </div>
+            <div class="ai-processor">
+              <div class="processor-core"></div>
+              <div class="processor-rings">
+                <div class="ring"></div>
+                <div class="ring"></div>
+                <div class="ring"></div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+        
+        <div class="tech-content">
+          <h2>Technologie de Pointe</h2>
+          <div class="tech-stats">
+            <div class="stat">
+              <div class="stat-number">99.7%</div>
+              <div class="stat-label">Précision IA</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">10x</div>
+              <div class="stat-label">Plus rapide</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">Disponibilité</div>
+            </div>
+          </div>
+          
+          <div class="tech-features">
+            <div class="tech-feature">
+              <h4>🧠 Neural Networks</h4>
+              <p>Réseaux de neurones profonds pour un apprentissage avancé</p>
+            </div>
+            <div class="tech-feature">
+              <h4>⚡ Quantum Processing</h4>
+              <p>Calculs quantiques pour une vitesse de traitement inégalée</p>
+            </div>
+            <div class="tech-feature">
+              <h4>🔮 Predictive AI</h4>
+              <p>Intelligence prédictive basée sur l'analyse comportementale</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action final -->
+    <section class="final-cta">
+      <div class="cta-container">
+        <h2>Prêt à révolutionner votre business ?</h2>
+        <p>Rejoignez l'élite des entreprises qui utilisent l'IA pour dominer leur marché</p>
+        <div class="cta-buttons">
+          <button class="cta-primary">Démarrer maintenant</button>
+          <button class="cta-secondary">Démo gratuite</button>
+        </div>
+        
+        <!-- Animated background elements -->
+        <div class="cta-particles">
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Animation des cartes au scroll
+      const cards = document.querySelectorAll('.service-card');
+      
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          }
+        });
+      }, observerOptions);
+      
+      cards.forEach(card => {
+        observer.observe(card);
+      });
+
+      // Interaction hover des cartes
+      cards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+          card.classList.add('card-hover');
+        });
+        
+        card.addEventListener('mouseleave', () => {
+          card.classList.remove('card-hover');
+        });
+      });
+    </script>
   </body>
 </html>

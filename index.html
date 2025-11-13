@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <meta charset="utf-8"   />
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ivana - IA RH & Prédiction</title>
+    <title>TCTG - Intelligence Artificielle Révolutionnaire</title>
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
@@ -23,55 +22,406 @@
       </nav>
     </header>
     <main>
-      <section class="RB-INTRO">
-        <img
-          class="animate__animated animate__backInDown"
-          src="images/logo.png"
-          alt="Logo Developpement"
+      <!-- Hero Section Futuriste -->
+      <section class="hero-main">
+        <!-- Flou dégradé en haut -->
+        <div class="top-fade-overlay"></div>
+        
+        <div class="matrix-bg">
+          <canvas id="matrixCanvas"></canvas>
+        </div>
+        
+        <!-- Logo en haut avec effets -->
+        <div class="logo-container-top">
+          <div class="logo-glow"></div>
+          <img src="images/logomini.png" alt="TCTG Logo" class="main-logo" />
+          <div class="logo-rings">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+            <div class="ring ring-4"></div>
+          </div>
+          <div class="logo-particles">
+            <div class="logo-particle lp-1"></div>
+            <div class="logo-particle lp-2"></div>
+            <div class="logo-particle lp-3"></div>
+            <div class="logo-particle lp-4"></div>
+            <div class="logo-particle lp-5"></div>
+            <div class="logo-particle lp-6"></div>
+          </div>
+          <div class="logo-energy-field">
+            <div class="energy-orb orb-1"></div>
+            <div class="energy-orb orb-2"></div>
+            <div class="energy-orb orb-3"></div>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <!-- Slogan animé -->
+          <div class="slogan-container">
+            <h1 class="main-slogan">
+              <span class="slogan-line">L'Intelligence Artificielle</span>
+              <span class="slogan-line highlight">qui révolutionne votre business</span>
+              <div class="text-effects">
+                <div class="spark spark-1"></div>
+                <div class="spark spark-2"></div>
+                <div class="spark spark-3"></div>
+                <div class="magic-trail"></div>
+              </div>
+            </h1>
+            <p class="slogan-subtitle">
+              Moins de paperasse, plus d'intelligence
+              <span class="subtitle-accent">✨</span>
+            </p>
+            
+            <!-- Boutons d'action -->
+            <div class="hero-actions">
+              <button class="btn-primary" onclick="location.href='nosservices.html'">
+                <span>Découvrir l'IA</span>
+                <div class="btn-glow"></div>
+              </button>
+              <button class="btn-secondary" onclick="location.href='contact.html'">
+                <span>Démo gratuite</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Particles flottantes -->
+        <div class="floating-particles">
+          <div class="particle p-1"></div>
+          <div class="particle p-2"></div>
+          <div class="particle p-3"></div>
+          <div class="particle p-4"></div>
+          <div class="particle p-5"></div>
+          <div class="particle p-6"></div>
+          <div class="particle p-7"></div>
+          <div class="particle p-8"></div>
+        </div>
+        
+        <!-- Geometric shapes flottantes -->
+        <div class="floating-shapes">
+          <div class="shape triangle"></div>
+          <div class="shape hexagon"></div>
+          <div class="shape diamond"></div>
+          <div class="shape circle-outline"></div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+          <div class="scroll-arrow"></div>
+        </div>
+      </section>
+
+      <!-- Section Features Révolutionnée -->
+      <section class="features-revolution">
+        <div class="features-container">
+          <h2 class="features-title">Pourquoi choisir notre IA ?</h2>
           
-        />
-      </section>
-      <section class="slogan">
-        <h1 class="animate__animated animate__backInDown">Moins de paperasse, plus d'intelligence.</h1>
-        <div class="ghost">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </section>
+          <div class="features-grid">
+            <!-- Feature 1: IA Support 24/7 -->
+            <div class="feature-card card-ai" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-bg-effect"></div>
+              <div class="feature-icon-new">
+                <div class="ai-assistant">
+                  <div class="assistant-core"></div>
+                  <div class="voice-waves">
+                    <div class="wave w-1"></div>
+                    <div class="wave w-2"></div>
+                    <div class="wave w-3"></div>
+                  </div>
+                  <div class="ai-particles">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+              <h3>IA Support 24/7</h3>
+              <p>Assistant intelligent disponible 24h/24, capable de résoudre 90% des problèmes automatiquement grâce au machine learning avancé.</p>
+              <div class="feature-stats">
+                <div class="stat-item">
+                  <span class="stat-num">24/7</span>
+                  <span class="stat-label">Disponibilité</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">90%</span>
+                  <span class="stat-label">Auto-résolution</span>
+                </div>
+              </div>
+              <button class="feature-btn">Essayer maintenant</button>
+            </div>
 
-      <section class="feature-blocks">
-        <div class="feature-block">
-          <div class="feature-icon">
-            <img class="animate__animated animate__backInLeft" src="images/chatsupport.png" alt="Support 24/7" />
+            <!-- Feature 2: Neural Network Community -->
+            <div class="feature-card card-community" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-bg-effect"></div>
+              <div class="feature-icon-new">
+                <div class="neural-network-viz">
+                  <div class="network-nodes">
+                    <div class="node n-1"></div>
+                    <div class="node n-2"></div>
+                    <div class="node n-3"></div>
+                    <div class="node n-4"></div>
+                    <div class="node n-5"></div>
+                  </div>
+                  <div class="network-connections">
+                    <svg viewBox="0 0 200 200">
+                      <line class="connection c-1" x1="50" y1="50" x2="100" y2="100" />
+                      <line class="connection c-2" x1="150" y1="50" x2="100" y2="100" />
+                      <line class="connection c-3" x1="100" y1="100" x2="75" y2="150" />
+                      <line class="connection c-4" x1="100" y1="100" x2="125" y2="150" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <h3>Réseau Neural Global</h3>
+              <p>Connectez-vous à notre écosystème d'intelligence collective où chaque interaction enrichit notre IA pour tous les utilisateurs.</p>
+              <div class="feature-stats">
+                <div class="stat-item">
+                  <span class="stat-num">10k+</span>
+                  <span class="stat-label">Utilisateurs</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">99.9%</span>
+                  <span class="stat-label">Uptime</span>
+                </div>
+              </div>
+              <button class="feature-btn">Rejoindre le réseau</button>
+            </div>
+
+            <!-- Feature 3: Quantum Help Center -->
+            <div class="feature-card card-quantum" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-bg-effect"></div>
+              <div class="feature-icon-new">
+                <div class="quantum-processor">
+                  <div class="quantum-core">
+                    <div class="qubit q-1"></div>
+                    <div class="qubit q-2"></div>
+                    <div class="qubit q-3"></div>
+                  </div>
+                  <div class="quantum-field">
+                    <div class="field-line f-1"></div>
+                    <div class="field-line f-2"></div>
+                    <div class="field-line f-3"></div>
+                  </div>
+                  <div class="quantum-glow"></div>
+                </div>
+              </div>
+              <h3>Centre Quantique</h3>
+              <p>Base de connaissances alimentée par l'IA quantique, capable de traiter et analyser des téraoctets d'informations instantanément.</p>
+              <div class="feature-stats">
+                <div class="stat-item">
+                  <span class="stat-num">1TB</span>
+                  <span class="stat-label">Données/sec</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">∞</span>
+                  <span class="stat-label">Possibilités</span>
+                </div>
+              </div>
+              <button class="feature-btn">Explorer quantum</button>
+            </div>
           </div>
-          <h2 class="animate__animated animate__backInLeft">Support 24/7</h2>
-          <p class="animate__animated animate__backInLeft">Une question ? Notre équipe d'experts IA est là pour vous aider à tout moment.</p>
-        </div>
-
-        <div class="feature-block">
-          <div class="feature-icon ">
-            <img class="animate__animated animate__backInUp" src="images/community.png" alt="Communauté" />
-          </div>
-          <h2 class="animate__animated animate__backInUp">Communauté</h2>
-          <p class="animate__animated animate__backInUp">Rejoignez notre communauté mondiale et restez informé des dernières actualités.</p>
-        </div>
-
-        <div class="feature-block">
-          <div class="feature-icon">
-            <img class="animate__animated animate__backInRight" src="images/helpcenter.png" alt="Centre d'aide" />
-          </div>
-          <h2 class="animate__animated animate__backInRight">Centre d'aide</h2>
-          <p class="animate__animated animate__backInRight">Accédez à notre bibliothèque complète de guides et ressources.</p>
         </div>
       </section>
 
+      <!-- Section Innovation & Stats -->
+      <section class="innovation-showcase">
+        <div class="innovation-container">
+          <div class="innovation-visual">
+            <div class="ai-brain-hologram">
+              <div class="brain-structure">
+                <div class="hemisphere left-brain">
+                  <div class="neural-pathways">
+                    <div class="pathway p-1"></div>
+                    <div class="pathway p-2"></div>
+                    <div class="pathway p-3"></div>
+                  </div>
+                </div>
+                <div class="hemisphere right-brain">
+                  <div class="neural-pathways">
+                    <div class="pathway p-4"></div>
+                    <div class="pathway p-5"></div>
+                    <div class="pathway p-6"></div>
+                  </div>
+                </div>
+                <div class="brain-core-center">
+                  <div class="core-pulse"></div>
+                </div>
+              </div>
+              <div class="holo-grid-overlay"></div>
+            </div>
+          </div>
+
+          <div class="innovation-content">
+            <h2>L'Innovation au Service de Votre Réussite</h2>
+            <p class="innovation-desc">Notre intelligence artificielle révolutionnaire combine les dernières avancées en machine learning, deep learning et computing quantique pour vous offrir des solutions inégalées.</p>
+            
+            <div class="innovation-metrics">
+              <div class="metric">
+                <div class="metric-icon">🧠</div>
+                <div class="metric-value" data-target="99.7">0</div>
+                <div class="metric-label">% Précision IA</div>
+              </div>
+              <div class="metric">
+                <div class="metric-icon">⚡</div>
+                <div class="metric-value" data-target="0.001">0</div>
+                <div class="metric-label">sec Traitement</div>
+              </div>
+              <div class="metric">
+                <div class="metric-icon">🚀</div>
+                <div class="metric-value" data-target="1000">0</div>
+                <div class="metric-label">x Plus rapide</div>
+              </div>
+              <div class="metric">
+                <div class="metric-icon">🌍</div>
+                <div class="metric-value" data-target="50">0</div>
+                <div class="metric-label">Pays couverts</div>
+              </div>
+            </div>
+
+            <button class="cta-innovation" onclick="location.href='nosservices.html'">
+              Voir nos technologies
+              <div class="btn-spark"></div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+        <!-- Call to Action Final -->
+      <section class="final-home-cta">
+        <div class="cta-bg-animation">
+          <!-- Particules subtiles -->
+          <div class="subtle-particles">
+            <div class="subtle-particle sp-1"></div>
+            <div class="subtle-particle sp-2"></div>
+            <div class="subtle-particle sp-3"></div>
+            <div class="subtle-particle sp-4"></div>
+          </div>
+        </div>
+        
+        <div class="cta-content-home">
+          <h2>Prêt à entrer dans l'ère de l'IA ?</h2>
+          <p>Rejoignez des milliers d'entreprises qui ont déjà révolutionné leur business</p>
+          
+          <div class="cta-actions-home">
+            <button class="cta-start" onclick="location.href='contact.html'">
+              <span>Commencer maintenant</span>
+              <div class="rocket-effect">🚀</div>
+            </button>
+            <button class="cta-demo" onclick="location.href='tarifs.html'">
+              <span>Voir les tarifs</span>
+            </button>
+          </div>
+          
+          <!-- Trust indicators -->
+          <div class="trust-indicators">
+            <div class="trust-item">
+              <span class="trust-number">10,000+</span>
+              <span class="trust-label">Entreprises conquises</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-number">5⭐</span>
+              <span class="trust-label">Note moyenne</span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-number">24/7</span>
+              <span class="trust-label">Support expert</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script>
-      // Ajoute une transition douce lors du scroll
+      // Matrix effect background
+      const canvas = document.getElementById('matrixCanvas');
+      const ctx = canvas.getContext('2d');
+
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
+      const matrixArray = matrix.split("");
+
+      const fontSize = 10;
+      const columns = canvas.width / fontSize;
+
+      const drops = [];
+      for(let x = 0; x < columns; x++) {
+        drops[x] = 1;
+      }
+
+      function drawMatrix() {
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        ctx.font = fontSize + 'px monospace';
+
+        for(let i = 0; i < drops.length; i++) {
+          const text = matrixArray[Math.floor(Math.random() * matrixArray.length)];
+          
+          // Gradient effect pour chaque caractère
+          const gradient = ctx.createLinearGradient(0, drops[i] * fontSize - 20, 0, drops[i] * fontSize + 20);
+          gradient.addColorStop(0, 'rgba(127, 156, 255, 0.1)');
+          gradient.addColorStop(0.3, 'rgba(127, 156, 255, 0.8)');
+          gradient.addColorStop(0.7, 'rgba(255, 0, 110, 0.6)');
+          gradient.addColorStop(1, 'rgba(255, 140, 66, 0.2)');
+          
+          ctx.fillStyle = gradient;
+          ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+          
+          // Effet de glow
+          ctx.shadowColor = '#7f9cff';
+          ctx.shadowBlur = 10;
+          ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+          ctx.shadowBlur = 0;
+
+          if(drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+            drops[i] = 0;
+          }
+          drops[i]++;
+        }
+      }
+
+      setInterval(drawMatrix, 35);
+
+      // Smooth scroll behavior
       document.documentElement.style.scrollBehavior = 'smooth';
+
+      // Counter animation for metrics
+      const metrics = document.querySelectorAll('.metric-value');
+      const observerOptions = {
+        threshold: 0.5
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const target = parseFloat(entry.target.dataset.target);
+            animateCounter(entry.target, target);
+          }
+        });
+      }, observerOptions);
+
+      metrics.forEach(metric => observer.observe(metric));
+
+      function animateCounter(element, target) {
+        let current = 0;
+        const increment = target / 100;
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+          } else {
+            element.textContent = Math.floor(current * 10) / 10;
+          }
+        }, 20);
+      }
+
+      // Resize canvas on window resize
+      window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      });
     </script>
   </body>
 </html>
